@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package public;
+
+option java_multiple_files = true;
+option java_package = "cz.dmvk.grpc.proto";
+
+service Benchmark {
+  rpc Run(stream Request) returns (stream Response) {}
+}
+
+message Request {
+
+}
+
+message Response {
+
+}
+
